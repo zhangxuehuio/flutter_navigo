@@ -13,11 +13,12 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   String _platformVersion = 'Unknown';
-
+  int  _currentIndex = 0;
   @override
   void initState() {
     super.initState();
     initPlatformState();
+    _currentIndex = 0;
   }
 
   // Platform messages are asynchronous, so we initialize in an async method.
@@ -47,8 +48,45 @@ class _MyAppState extends State<MyApp> {
         appBar: AppBar(
           title: const Text('Plugin example app'),
         ),
-        body: Center(
-          child: Text('Running on: $_platformVersion\n'),
+        body: _currentIndex==0?Container():Container(),
+        bottomNavigationBar: BottomNavigationBar(
+          items: [
+            BottomNavigationBarItem(
+              icon: Image.asset(
+                "assets/navigo_api.png",
+                width: 28,
+                height: 28,
+              ),
+              title: Text(
+                'Navigo',
+                style: TextStyle(
+                color: Color(0xff1296db),
+                fontSize: 14,
+                ),
+              ),
+            ),
+            BottomNavigationBarItem(
+              icon: Image.asset(
+                "assets/flutter_api.png",
+                width: 26,
+                height: 26,
+              ),
+              title: Text(
+                'Flutter',
+                style: TextStyle(
+                color: Color(0xff1296db),
+                fontSize: 14,
+                ),
+              ),
+            ),
+          ],
+          currentIndex: _currentIndex,
+          onTap: (int index) {
+            setState(() {
+              _currentIndex = index;
+              },
+            );
+          },
         ),
       ),
     );
