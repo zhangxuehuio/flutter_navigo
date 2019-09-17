@@ -4,13 +4,13 @@ import 'package:flutter_navigo_example/test2_page.dart';
 
 import 'test1_page.dart';
 
-class FlutterAppPage extends StatefulWidget {
+class FlutterApiPage extends StatefulWidget {
   @override
-  _FlutterAppPageState createState() => _FlutterAppPageState();
+  _FlutterApiPageState createState() => _FlutterApiPageState();
 }
 
-class _FlutterAppPageState extends State<FlutterAppPage> {
-  String _pageName = '_FlutterAppPageState';
+class _FlutterApiPageState extends State<FlutterApiPage> {
+  String _pageName = 'FlutterApiPage';
 
   List<ApiModel> list = [];
 
