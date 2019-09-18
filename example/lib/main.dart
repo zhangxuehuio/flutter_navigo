@@ -3,6 +3,7 @@ import 'dart:async';
 
 import 'package:flutter/services.dart';
 import 'package:flutter_navigo/flutter_navigo.dart';
+import 'package:flutter_navigo_example/flutter_api_page.dart';
 
 void main() => runApp(MyApp());
 
@@ -13,7 +14,8 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   String _platformVersion = 'Unknown';
-  int  _currentIndex = 0;
+  int _currentIndex = 0;
+
   @override
   void initState() {
     super.initState();
@@ -45,23 +47,26 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Plugin example app'),
-        ),
-        body: _currentIndex==0?Container():Container(),
+        backgroundColor: Colors.white70,
+        body: _currentIndex == 0 ? Container() : FlutterApiPage(),
         bottomNavigationBar: BottomNavigationBar(
+          backgroundColor: Colors.white,
+          unselectedItemColor: Colors.black54,
+          selectedItemColor: Color(0xff1296db),
           items: [
             BottomNavigationBarItem(
               icon: Image.asset(
                 "assets/navigo_api.png",
                 width: 28,
                 height: 28,
+                color: _currentIndex == 0 ? Color(0xff1296db) : Colors.black54,
               ),
               title: Text(
                 'Navigo',
                 style: TextStyle(
-                color: Color(0xff1296db),
-                fontSize: 14,
+                  color:
+                      _currentIndex == 0 ? Color(0xff1296db) : Colors.black54,
+                  fontSize: 14,
                 ),
               ),
             ),
@@ -70,20 +75,23 @@ class _MyAppState extends State<MyApp> {
                 "assets/flutter_api.png",
                 width: 26,
                 height: 26,
+                color: _currentIndex == 1 ? Color(0xff1296db) : Colors.black54,
               ),
               title: Text(
                 'Flutter',
                 style: TextStyle(
-                color: Color(0xff1296db),
-                fontSize: 14,
+                  color:
+                      _currentIndex == 1 ? Color(0xff1296db) : Colors.black54,
+                  fontSize: 14,
                 ),
               ),
             ),
           ],
           currentIndex: _currentIndex,
           onTap: (int index) {
-            setState(() {
-              _currentIndex = index;
+            setState(
+              () {
+                _currentIndex = index;
               },
             );
           },
