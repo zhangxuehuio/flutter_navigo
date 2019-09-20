@@ -2,19 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="811c5078-66b9-43e0-80af-661bcc4103f4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/navigo.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/navigo_log.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/page_route_manager.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/lib/flutter/flutter_method_detail_page.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/lib/flutter_api_base_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/flutter/flutter_api_base_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/lib/flutter_api_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/flutter/flutter_api_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/lib/navigo.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/utils/navigo.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/lib/navigo_api_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/navigo/navigo_api_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/lib/navigo_log.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/utils/navigo_log.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/lib/page_route_manager.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/utils/page_route_manager.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/lib/test1_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/test1_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/lib/test2_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/test2_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/lib/utils/navigo.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/utils/navigo.dart" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.dart_tool/" />
     <ignored path="$PROJECT_DIR$/.idea/" />
@@ -35,22 +25,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/navigo.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../../../fluttersdk/flutter/packages/flutter/lib/src/widgets/navigator.dart">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="190">
-              <caret line="1351" column="35" lean-forward="true" selection-start-line="1351" selection-start-column="17" selection-end-line="1351" selection-end-column="35" />
+              <caret line="1351" column="14" selection-start-line="1351" selection-start-column="14" selection-end-line="1351" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -58,8 +36,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/example/lib/flutter/flutter_api_base_page.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="482">
-              <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+            <state relative-caret-position="204">
+              <caret line="11" column="37" selection-end-line="276" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/example/lib/flutter/flutter_method_detail_page.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="314">
+              <caret line="25" column="8" lean-forward="true" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -92,19 +82,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/example/pubspec.yaml">
+        <entry file="file://$PROJECT_DIR$/example/lib/utils/navigo.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+            <state relative-caret-position="303">
+              <caret line="53" column="7" lean-forward="true" selection-start-line="53" selection-start-column="7" selection-end-line="53" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/example/lib/utils/navigo.dart">
+        <entry file="file://$PROJECT_DIR$/../../../fluttersdk/flutter/bin/cache/pkg/sky_engine/lib/async/future.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="34" column="27" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
+            <state relative-caret-position="207">
+              <caret line="171" column="10" selection-start-line="171" selection-start-column="10" selection-end-line="171" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -114,11 +104,11 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/example/lib/main.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="452">
-              <caret line="43" column="3" lean-forward="true" selection-start-line="43" selection-start-column="3" selection-end-line="43" selection-end-column="3" />
+            <state relative-caret-position="251">
+              <caret line="42" column="7" lean-forward="true" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="7" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -136,10 +126,15 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Dart File" />
         <option value="Python Script" />
+        <option value="Dart File" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Future</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -163,14 +158,15 @@
         <option value="$PROJECT_DIR$/example/lib/test1_page.dart" />
         <option value="$PROJECT_DIR$/example/lib/test2_page.dart" />
         <option value="$PROJECT_DIR$/example/lib/utils/navigo.dart" />
+        <option value="$PROJECT_DIR$/example/lib/flutter/flutter_method_detail_page.dart" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1440" />
-    <option name="y" value="228" />
-    <option name="width" value="1846" />
-    <option name="height" value="1057" />
+    <option name="x" value="1682" />
+    <option name="y" value="260" />
+    <option name="width" value="1440" />
+    <option name="height" value="877" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -325,13 +321,20 @@
       <option name="project" value="LOCAL" />
       <updated>1568805708234</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="公司版本test2">
+      <created>1568964391544</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1568964391544</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1440" y="228" width="1846" height="1057" extended-state="0" />
+    <frame x="1682" y="260" width="1440" height="877" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49918434" visible="true" weight="0.20399113" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49918434" visible="true" weight="0.26323318" />
       <window_info id="Captures" order="1" side_tool="true" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
@@ -340,6 +343,7 @@
       <window_info id="Resources Explorer" order="6" sideWeight="0.5008157" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="7" />
       <window_info id="Favorites" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Find" />
       <window_info anchor="bottom" id="Dart Analysis" order="0" weight="0.32932165" />
       <window_info anchor="bottom" id="Run" order="1" weight="0.33056995" />
       <window_info anchor="bottom" id="TODO" order="2" />
@@ -349,8 +353,8 @@
       <window_info anchor="bottom" id="Terminal" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Flutter Performance" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" visible="true" weight="0.3284974" />
+      <window_info anchor="bottom" id="Version Control" order="9" visible="true" weight="0.40509555" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3284974" />
       <window_info anchor="bottom" id="FindBugs-IDEA" order="11" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
@@ -395,7 +399,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="公司版本" />
-    <option name="LAST_COMMIT_MESSAGE" value="公司版本" />
+    <MESSAGE value="公司版本test2" />
+    <option name="LAST_COMMIT_MESSAGE" value="公司版本test2" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/../../../flutter/packages/flutter/lib/src/widgets/scroll_view.dart" />
@@ -528,16 +533,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/example/lib/flutter/flutter_api_base_page.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/example/lib/test1_page.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -558,30 +553,64 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/example/lib/utils/page_route_manager.dart">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example/lib/main.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="42" column="7" lean-forward="true" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/example/lib/utils/navigo_log.dart">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/example/lib/utils/page_route_manager.dart">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../../fluttersdk/flutter/packages/flutter/lib/src/widgets/navigator.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
-          <caret line="1351" column="35" lean-forward="true" selection-start-line="1351" selection-start-column="17" selection-end-line="1351" selection-end-column="35" />
+          <caret line="1351" column="14" selection-start-line="1351" selection-start-column="14" selection-end-line="1351" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../fluttersdk/flutter/bin/cache/pkg/sky_engine/lib/async/future.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="171" column="10" selection-start-line="171" selection-start-column="10" selection-end-line="171" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/example/lib/utils/navigo.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="34" column="27" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
+        <state relative-caret-position="303">
+          <caret line="53" column="7" lean-forward="true" selection-start-line="53" selection-start-column="7" selection-end-line="53" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/example/lib/main.dart">
+    <entry file="file://$PROJECT_DIR$/example/lib/flutter/flutter_api_base_page.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="43" column="3" lean-forward="true" selection-start-line="43" selection-start-column="3" selection-end-line="43" selection-end-column="3" />
+        <state relative-caret-position="204">
+          <caret line="11" column="37" selection-end-line="276" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example/lib/flutter/flutter_method_detail_page.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="25" column="8" lean-forward="true" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
