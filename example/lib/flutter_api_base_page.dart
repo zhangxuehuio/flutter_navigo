@@ -103,8 +103,10 @@ class _FlutterApiBasePageState extends State<FlutterApiBasePage>
     setState(() {
       if (expand) {
         animationController.forward();
+        iconColors = Color(0xff1296db);
       } else {
         animationController.reverse();
+        iconColors = Color(0xBB000000);
       }
     });
   }
@@ -112,6 +114,7 @@ class _FlutterApiBasePageState extends State<FlutterApiBasePage>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white70,
       appBar: AppBar(
         leading: Icon(Icons.arrow_back_ios),
         centerTitle: true,
@@ -119,36 +122,13 @@ class _FlutterApiBasePageState extends State<FlutterApiBasePage>
       ),
       body: ListView(
         children: <Widget>[
-          _buildItem("","",(c){}),
-          /// (title: Text('第一列')),
-//          ExpansionTile(
-//            title: const Text('通过Route跳转'),
-//            backgroundColor: Colors.white,
-//            trailing: RotationTransition(
-//              turns: animation,
-//              child: Icon(
-//                Icons.chevron_right,
-//                color: iconColors,
-//              ),
-//            ),
-//            onExpansionChanged: (bool) {
-//              _changeOpacity(bool);
-//            },
-//            children: const <Widget>[
-//              ListTile(title: Text('One')),
-//              ListTile(title: Text('Two')),
-//              ListTile(title: Text('Free')),
-//              ListTile(title: Text('Four'))
-//            ],
-//          ),
-//          const ListTile(title: Text('第三列')),
+          _buildItem('通过Route跳转', list),
         ],
       ),
     );
   }
 
-  _buildItem(
-      String title, String desc, Function(BuildContext context) callback) {
+  _buildItem(String title, List<ApiModel> list) {
     return Container(
       decoration: BoxDecoration(
         color: Color(0xffeeeeee),
@@ -156,39 +136,16 @@ class _FlutterApiBasePageState extends State<FlutterApiBasePage>
         border: Border.all(color: Color(0xFFFEFEFE), width: 1),
       ),
       margin: EdgeInsets.symmetric(horizontal: 15, vertical: 10),
-      child:ExpansionTile(
-        title: Container(
-          decoration: BoxDecoration(
-              color: Colors.white,
-              borderRadius: BorderRadius.only(
-                  topLeft: Radius.circular(9),
-                  topRight: Radius.circular(9)),
-              border: Border.all(color: Color(0xFFFEFEFE), width: 2)
+      child: ExpansionTile(
+        title: Text(
+          title,
+          style: TextStyle(
+            fontWeight: FontWeight.w500,
+            fontSize: 18,
+            color: iconColors,
           ),
-          padding: EdgeInsets.all(8),
-          alignment: Alignment.centerLeft,
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            mainAxisSize: MainAxisSize.max,
-            children: <Widget>[
-              Text(
-                title,
-                style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
-                  color: Color(0xBB000000),
-                ),
-              ),
-              Icon(
-                Icons.arrow_forward_ios,
-                color: Color(0xBB000000),
-                size: 20,
-              )
-            ],
-          ),
+          textAlign: TextAlign.left,
         ),
-//        Text('通过Route跳转'),
-        backgroundColor: Colors.white,
         trailing: RotationTransition(
           turns: animation,
           child: Icon(
@@ -199,14 +156,25 @@ class _FlutterApiBasePageState extends State<FlutterApiBasePage>
         onExpansionChanged: (bool) {
           _changeOpacity(bool);
         },
-        children: const <Widget>[
-          ListTile(title: Text('One')),
-          ListTile(title: Text('Two')),
-          ListTile(title: Text('Free')),
-          ListTile(title: Text('Four'))
-        ],
+        children: _getChildrenAction(list),
       ),
     );
+  }
+
+  List<Widget> _getChildrenAction(List<ApiModel> list) {
+    return List<Widget>.generate(list.length, (int index) {
+      ApiModel model = list[index];
+      return ListTile(
+        onTap: (){
+          Navigator.push(context, route)
+        },
+        title: Text(model.name),
+        subtitle: Text("跳转到目标页面"),
+        trailing: Icon(
+          Icons.chevron_right,
+        ),
+      );
+    });
   }
 }
 

@@ -1,0 +1,59 @@
+{
+  "push_list": [
+    {
+      "title": "push",
+      "subtitle": "点击跳转到目标页面",
+      "flutter_desc": "Push the given route onto the navigator that most tightly encloses the given context. [...]",
+      "my_desc": "点击跳转到目标页面",
+      "example": "Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => MyPage()));",
+      "param_desc": ""
+    }
+  ],
+  "pop_list": [
+    {
+      "title": "pop",
+      "subtitle": "点击跳转到目标页面",
+      "flutter_desc": "",
+      "my_desc": "点击跳转到目标页面",
+      "example": "Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => MyPage()));",
+      "param_desc": ""
+    }
+  ],
+  "remove_list": [
+    {
+      "title": "pop",
+      "subtitle": "点击跳转到目标页面",
+      "flutter_desc": "",
+      "my_desc": "点击跳转到目标页面",
+      "example": "Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => MyPage()));",
+      "param_desc": ""
+    }
+  ],
+  "replace_list": [
+    {
+      "title": "pop",
+      "subtitle": "点击跳转到目标页面",
+      "flutter_desc": "",
+      "my_desc": "点击跳转到目标页面",
+      "example": "Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => MyPage()));",
+      "param_desc": ""
+    }
+  ],
+  "judge_list": [
+    {
+      "title": "canPop(BuildContext context) → bool",
+      "subtitle": "判断是否可以导航到新的页面",
+      "flutter_desc": "Whether the navigator that most tightly encloses the given context can be popped.",
+      "my_desc": "判断是否可以导航到新的页面,若Navigator为null,返回false",
+      "example": "static bool canPop(BuildContext context) {\n  final NavigatorState navigator = Navigator.of(context, nullOk: true);\n  return navigator != null && navigator.canPop();\n}",
+      "param_desc": "包裹当前页面的上下文"
+    }, {
+      "title": "maybePop\n< T extends Object > （BuildContext context，[ T result ]） → Future < bool >",
+      "subtitle": "判断是否可以导航到新的页面",
+      "flutter_desc": "Whether the navigator that most tightly encloses the given context can be popped.",
+      "my_desc": "判断是否可以导航到新的页面,若Navigator为null,返回false",
+      "example": "@optionalTypeArgs\nstatic Future<bool> maybePop<T extends Object>(BuildContext context, [ T result ]) {\n  return Navigator.of(context).maybePop<T>(result);\n}",
+      "param_desc": "包裹当前页面的上下文"
+    }
+  ]
+}
