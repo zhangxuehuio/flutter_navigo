@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_navigo_example/flutter_api_base_page.dart';
+import 'package:flutter_navigo_example/flutter/flutter_api_base_page.dart';
 
 class FlutterApiPage extends StatefulWidget {
   @override

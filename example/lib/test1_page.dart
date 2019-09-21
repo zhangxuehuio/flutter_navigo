@@ -1,8 +1,8 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_navigo_example/page_route_manager.dart';
 import 'package:flutter_navigo_example/test2_page.dart';
+import 'package:flutter_navigo_example/utils/page_route_manager.dart';
 
 class Test1Model {
   bool isOnTap = false;

@@ -1,7 +1,6 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_navigo_example/page_route_manager.dart';
 
 class Test2Page extends StatefulWidget {
   static const String pageName = 'Test2Page';

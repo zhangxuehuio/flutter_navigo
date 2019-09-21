@@ -3,7 +3,7 @@ import 'dart:async';
 
 import 'package:flutter/services.dart';
 import 'package:flutter_navigo/flutter_navigo.dart';
-import 'package:flutter_navigo_example/flutter_api_page.dart';
+import 'package:flutter_navigo_example/flutter/flutter_api_page.dart';
 
 void main() => runApp(MyApp());
 
