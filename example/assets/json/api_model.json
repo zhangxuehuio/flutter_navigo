@@ -1,59 +1,301 @@
 {
   "push_list": [
     {
-      "title": "push",
-      "subtitle": "点击跳转到目标页面",
-      "flutter_desc": "Push the given route onto the navigator that most tightly encloses the given context. [...]",
-      "my_desc": "点击跳转到目标页面",
-      "example": "Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => MyPage()));",
-      "param_desc": ""
+      "method": "push",
+      "params": [
+        {
+          "name":"BuildContext context",
+          "desc": "上下文。"
+        },
+        {
+          "name":"Route<T> route",
+          "desc": "想要跳转的目标路由对象"
+        }
+      ],
+      "api_link": "https://api.flutter.dev/flutter/widgets/Navigator/push.html",
+      "my_desc": "跳转到目标页面",
+      "example": " Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => MyPage()));",
+      "example_desc": "跳转到目标页面"
+    },{
+      "method": "pushAndRemoveUntil",
+      "params": [
+        {
+          "name":"BuildContext context",
+          "desc": "上下文。"
+        },
+        {
+          "name":"Route<T> route",
+          "desc": "想要跳转的目标路由对象"
+        },
+        {
+          "name":"RoutePredicate predicate",
+          "desc": "想要跳转的目标路由，可以通过ModalRoute获取路由。"
+        }
+      ],
+      "api_link": "https://api.flutter.dev/flutter/widgets/Navigator/pushAndRemoveUntil.html",
+      "my_desc": "跳转到目标页面，并移除命名路由。",
+      "example": " Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => MyPage()));",
+      "example_desc": "跳转到目标页面，并移除命名路由。"
+    },{
+      "method": "pushNamed",
+      "params": [
+        {
+          "name":"BuildContext context",
+          "desc": "上下文。"
+        },
+        {
+          "name":"String routeName",
+          "desc": "目标路由名称"
+        },
+        {
+          "name":"Object arguments",
+          "desc": "可选参数，返回给上一界面的值。"
+        }
+      ],
+      "api_link": "https://api.flutter.dev/flutter/widgets/Navigator/pushNamed.html",
+      "my_desc": "跳转到目标页面，并移除命名路由。",
+      "example": " Navigator.pushNamed(context, '/settings');",
+      "example_desc": "跳转到目标页面，并移除命名路由。"
+    },{
+      "method": "pushNamedAndRemoveUntil",
+      "params": [
+        {
+          "name":"BuildContext context",
+          "desc": "上下文。"
+        },
+        {
+          "name":"String routeName",
+          "desc": "目标路由名称"
+        },
+        {
+          "name":"RoutePredicate predicate",
+          "desc": "想要跳转的目标路由，可以通过ModalRoute获取路由。"
+        },
+        {
+          "name":"Object arguments",
+          "desc": "可选参数，返回给上一界面的值。"
+        }
+      ],
+      "api_link": "https://api.flutter.dev/flutter/widgets/Navigator/pushNamedAndRemoveUntil.html",
+      "my_desc": "跳转到目标页面，并移除命名路由。",
+      "example": "Navigator.pushNamedAndRemoveUntil(context, '/calendar', ModalRoute.withName('/'));",
+      "example_desc": "跳转到目标页面，并移除命名路由。"
+    },{
+      "method": "pushReplacement",
+      "params": [
+        {
+          "name":"BuildContext context",
+          "desc": "上下文。"
+        },
+        {
+          "name":"Route<T> route",
+          "desc": "想要跳转的目标路由对象"
+        },
+        {
+          "name":"TO result",
+          "desc": "可选参数，返回给上一界面的值。"
+        }
+      ],
+      "api_link": "https://api.flutter.dev/flutter/widgets/Navigator/pushReplacement.html",
+      "my_desc": "跳转到目标页面，并移除命名路由。",
+      "example": "Navigator.pushReplacement(\n      context, MaterialPageRoute(builder: (BuildContext context) => MyHomePage()));",
+      "example_desc": "跳转到目标页面，并移除命名路由。"
+    },{
+      "method": "pushReplacementNamed",
+      "params": [
+        {
+          "name":"BuildContext context",
+          "desc": "上下文。"
+        },
+        {
+          "name":"String routeName",
+          "desc": "想要跳转的目标路由名称"
+        },
+        {
+          "name":"TO result",
+          "desc": "可选参数，返回给上一界面的值。"
+        },
+        {
+          "name":"Object arguments",
+          "desc": "可选参数，传递给目标界面的值。"
+        }
+      ],
+      "api_link": "https://api.flutter.dev/flutter/widgets/Navigator/pushReplacementNamed.html",
+      "my_desc": "跳转到目标页面，并移除命名路由。",
+      "example": "Navigator.pushReplacementNamed(context, '/settings/brightness');",
+      "example_desc": "跳转到目标页面，并移除命名路由。"
     }
   ],
   "pop_list": [
     {
-      "title": "pop",
-      "subtitle": "点击跳转到目标页面",
-      "flutter_desc": "",
-      "my_desc": "点击跳转到目标页面",
-      "example": "Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => MyPage()));",
-      "param_desc": ""
+      "method": "pop",
+      "params": [
+        {
+          "name":"BuildContext context",
+          "desc": "上下文。"
+        },
+        {
+          "name":"T result",
+          "desc": "可选参数，返回给上一界面的值。"
+        }
+      ],
+      "api_link": "https://api.flutter.dev/flutter/widgets/Navigator/pop.html",
+      "my_desc": "关闭当前页面",
+      "example": "Navigator.pop(context);",
+      "example_desc": "直接关闭当前页面"
+    },
+    {
+      "method": "popUntil",
+      "params": [
+        {
+          "name":"BuildContext context",
+          "desc": "上下文。"
+        },
+        {
+          "name":"RoutePredicate predicate",
+          "desc": "想要跳转的目标路由，可以通过ModalRoute获取路由。"
+        }
+      ],
+      "api_link": "https://api.flutter.dev/flutter/widgets/Navigator/popUntil.html",
+      "my_desc": "直接跳转到目标路由界面，并关闭其上所有界面。",
+      "example": "Navigator.popUntil(context, ModalRoute.withName('/login'));",
+      "example_desc": "从堆栈中查找，是否存在名称为【/login】的路由。\n若存在，pop掉【/login】路由之上的全部页面。\n若不存在，报异常。"
+    },
+    {
+      "method": "popAndPushNamed",
+      "params": [
+        {
+          "name":"BuildContext context",
+          "desc": "上下文。"
+        },
+        {
+          "name":"String routeName",
+          "desc": "想要跳转的目标路由名称"
+        },
+        {
+          "name":"TO result",
+          "desc": "可选参数，返回给上一界面的值。"
+        },
+        {
+          "name":"Object arguments",
+          "desc": "可选参数，传递给目标界面的值。"
+        }
+      ],
+      "api_link": "https://api.flutter.dev/flutter/widgets/Navigator/popAndPushNamed.html",
+      "my_desc": "关闭当前页面，同时跳转到目标界面，不论堆栈中是否存在目标页面，都会新建目标页面。\n该方法，允许同时向两端传递参数。",
+      "example": "Navigator.pop(context);",
+      "example_desc": "Navigator.popAndPushNamed(context, '/settings/accessibility');"
     }
   ],
   "remove_list": [
     {
-      "title": "pop",
-      "subtitle": "点击跳转到目标页面",
-      "flutter_desc": "",
-      "my_desc": "点击跳转到目标页面",
-      "example": "Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => MyPage()));",
-      "param_desc": ""
+      "method": "removeRoute",
+      "params": [
+        {
+          "name":"BuildContext context",
+          "desc": "上下文。"
+        },
+        {
+          "name":"Route route",
+          "desc": "想要移除的路由对象"
+        }
+      ],
+      "api_link": "https://api.flutter.dev/flutter/widgets/Navigator/removeRoute.html",
+      "my_desc": "将堆栈中的对象，从页面中移除；不知？？？与pop的关系",
+      "example": "Navigator.removeRoute(context,A);待定",
+      "example_desc": "从堆栈中移除路由A"
+    },
+    {
+      "method": "removeRouteBelow???",
+      "params": [
+        {
+          "name":"BuildContext context",
+          "desc": "上下文。"
+        },
+        {
+          "name":"Route anchorRoute",
+          "desc": "????"
+        }
+      ],
+      "api_link": "https://api.flutter.dev/flutter/widgets/Navigator/removeRouteBelow.html",
+      "my_desc": "将目标路由替换为新的界面。不知？？是否会替换非栈顶页面，不知？？是否会关闭上方页面",
+      "example": "Navigator.removeRouteBelow(context,A,B);待定",
+      "example_desc": "将A页面替换为B页面？？？？"
     }
   ],
   "replace_list": [
     {
-      "title": "pop",
-      "subtitle": "点击跳转到目标页面",
-      "flutter_desc": "",
-      "my_desc": "点击跳转到目标页面",
-      "example": "Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => MyPage()));",
-      "param_desc": ""
+      "method": "replace",
+      "params": [
+        {
+          "name":"BuildContext context",
+          "desc": "上下文。"
+        },
+        {
+          "name":"Route oldRoute",
+          "desc": "旧路由对象"
+        },
+        {
+          "name":"Route<T> newRoute",
+          "desc": "想要替换的目标对象"
+        }
+      ],
+      "api_link": "https://api.flutter.dev/flutter/widgets/Navigator/replace.html",
+      "my_desc": "将目标路由替换为新的界面。不知？？是否会替换非栈顶页面，不知？？是否会关闭上方页面",
+      "example": "Navigator.replace(context,A,B);待定",
+      "example_desc": "将A页面替换为B页面"
+    },
+    {
+      "method": "replaceRouteBelow???",
+      "params": [
+        {
+          "name":"BuildContext context",
+          "desc": "上下文。"
+        },
+        {
+          "name":"Route anchorRoute",
+          "desc": "????。"
+        },
+        {
+          "name":"Route<T> newRoute",
+          "desc": "想要替换的目标对象"
+        }
+      ],
+      "api_link": "https://api.flutter.dev/flutter/widgets/Navigator/replaceRouteBelow.html",
+      "my_desc": "将目标路由替换为新的界面。不知？？是否会替换非栈顶页面，不知？？是否会关闭上方页面",
+      "example": "Navigator.replaceRouteBelow(context,A,B);待定",
+      "example_desc": "将A页面替换为B页面"
     }
   ],
   "judge_list": [
     {
-      "title": "canPop(BuildContext context) → bool",
-      "subtitle": "判断是否可以导航到新的页面",
-      "flutter_desc": "Whether the navigator that most tightly encloses the given context can be popped.",
+      "method": "canPop???",
+      "params": [
+        {
+          "name":"BuildContext context",
+          "desc": "上下文。"
+        }
+      ],
+      "api_link": "https://api.flutter.dev/flutter/widgets/Navigator/canPop.html",
       "my_desc": "判断是否可以导航到新的页面,若Navigator为null,返回false",
-      "example": "static bool canPop(BuildContext context) {\n  final NavigatorState navigator = Navigator.of(context, nullOk: true);\n  return navigator != null && navigator.canPop();\n}",
-      "param_desc": "包裹当前页面的上下文"
-    }, {
-      "title": "maybePop\n< T extends Object > （BuildContext context，[ T result ]） → Future < bool >",
-      "subtitle": "判断是否可以导航到新的页面",
-      "flutter_desc": "Whether the navigator that most tightly encloses the given context can be popped.",
-      "my_desc": "判断是否可以导航到新的页面,若Navigator为null,返回false",
-      "example": "@optionalTypeArgs\nstatic Future<bool> maybePop<T extends Object>(BuildContext context, [ T result ]) {\n  return Navigator.of(context).maybePop<T>(result);\n}",
-      "param_desc": "包裹当前页面的上下文"
+      "example": "Navigator.canPop(context);待定",
+      "example_desc": "判断是否可以导航到新的页面"
+    },{
+      "method": "maybePop???",
+      "params": [
+        {
+          "name":"BuildContext context",
+          "desc": "上下文。"
+        },
+        {
+          "name":"T result",
+          "desc": "????。"
+        }
+      ],
+      "api_link": "https://api.flutter.dev/flutter/widgets/Navigator/maybePop.html",
+      "my_desc": "????",
+      "example": "Navigator.maybePop(context);待定",
+      "example_desc": "????"
     }
   ]
 }

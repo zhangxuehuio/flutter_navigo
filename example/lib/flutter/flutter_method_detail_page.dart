@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_navigo_example/test1_page.dart';
-import 'package:flutter_navigo_example/test2_page.dart';
-import 'package:flutter_navigo_example/utils/page_route_manager.dart';
 
 
 class FlutterMethodDetailPage extends StatefulWidget {

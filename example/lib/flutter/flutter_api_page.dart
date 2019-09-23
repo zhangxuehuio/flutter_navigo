@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_navigo_example/flutter/flutter_api_base_page.dart';
+import 'package:flutter_navigo_example/flutter/flutter_api_list_page.dart';
+import 'package:flutter_navigo_example/widget/common_app_bar.dart';
 
 class FlutterApiPage extends StatefulWidget {
+  static final String routeName = "/flutter/api";
+
   @override
   _FlutterApiPageState createState() => _FlutterApiPageState();
 }
@@ -18,9 +21,8 @@ class _FlutterApiPageState extends State<FlutterApiPage> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(
-          title: const Text('flutter api'),
-        ),
+        backgroundColor: Color(0xffeeeeee),
+        appBar: CommonAppBar('flutter api'),
         body: SingleChildScrollView(
           child: Column(
             children: <Widget>[
@@ -30,10 +32,13 @@ class _FlutterApiPageState extends State<FlutterApiPage> {
                       "\n    理论上flutter可以从当前页面，跳转到任意类型为Widget的页面。"
                       "\n    如：整个页面切换，或整个页面中某一个子Widget的切换。在路由中，可以整理为以下两大类："
                       "\n      1.通过route类，进行跳转"
-                      "\n      2.通过名字跳转",
-                      (context) {
-                        Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => FlutterApiBasePage()));
-                  }),
+                      "\n      2.通过名字跳转", (context) {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (BuildContext context) =>
+                            FlutterApiListPage()));
+              }),
               _buildItem(
                   "参数传递",
                   "    在页面跳转过程中，我们经常需要从一个页面向另一个页面传值。"
@@ -41,21 +46,21 @@ class _FlutterApiPageState extends State<FlutterApiPage> {
                       "\n    1.命名路由传参（构造方法）"
                       "\n    2.非命名路由传参（object）"
                       "\n    3.页面pop传参",
-                      (context) {}),
+                  (context) {}),
               _buildItem(
                   "跳转动画",
                   "    页面切换时显示的动画，如：淡入淡出、平移等动画。"
                       "\n    动画共有以下几种形式："
                       "\n    1.官方提供的兼容性动画"
                       "\n    2.自定义动画",
-                      (context) {}),
+                  (context) {}),
               _buildItem(
                   "跳转拦截",
                   "    在页面跳转工程中，可能会需要，类似登录检测、插入广告、异常处理等操作。"
                       "\n    官方提供以下几种形式："
                       "\n    1.本地拦截"
                       "\n    2.全局拦截",
-                      (context) {}),
+                  (context) {}),
               Container(
                 padding: EdgeInsets.all(20),
                 child: Text(
@@ -75,8 +80,8 @@ class _FlutterApiPageState extends State<FlutterApiPage> {
     );
   }
 
-  _buildItem(String title, String desc,
-      Function(BuildContext context) callback) {
+  _buildItem(
+      String title, String desc, Function(BuildContext context) callback) {
     return Container(
       decoration: BoxDecoration(
         color: Color(0xffeeeeee),
@@ -99,8 +104,7 @@ class _FlutterApiPageState extends State<FlutterApiPage> {
                   borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(9),
                       topRight: Radius.circular(9)),
-                  border: Border.all(color: Color(0xFFFEFEFE), width: 2)
-              ),
+                  border: Border.all(color: Color(0xFFFEFEFE), width: 2)),
               padding: EdgeInsets.all(8),
               alignment: Alignment.centerLeft,
               child: Row(

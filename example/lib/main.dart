@@ -3,7 +3,10 @@ import 'dart:async';
 
 import 'package:flutter/services.dart';
 import 'package:flutter_navigo/flutter_navigo.dart';
+import 'package:flutter_navigo_example/flutter/flutter_api_list_page.dart';
+import 'package:flutter_navigo_example/flutter/flutter_api_method_page.dart';
 import 'package:flutter_navigo_example/flutter/flutter_api_page.dart';
+import 'package:flutter_navigo_example/flutter/flutter_method_detail_page.dart';
 
 void main() => runApp(MyApp());
 
@@ -95,8 +98,14 @@ class _MyAppState extends State<MyApp> {
               },
             );
           },
+
         ),
       ),
+      routes: <String, WidgetBuilder> {
+        FlutterApiPage.routeName : (BuildContext context) => FlutterApiPage(),
+        FlutterApiListPage.routeName: (BuildContext context) => FlutterApiListPage(),
+        FlutterApiMethodPage.routeName: (BuildContext context) => FlutterApiMethodPage(),
+      },
     );
   }
 }
